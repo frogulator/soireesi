@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rsvp.css">
+</head>
+<body>
+    <div class="rsvp-form-container">
+        <form id="rsvpForm">
+            <h2>RSVP</h2>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="attendance">Kommst du rum?</label>
+            <select id="attendance" name="attendance">
+                <option value="yes">Ja!</option>
+                <option value="no">Nein :( </option>
+                <option value="maybe">Vielleicht...</option>
+            </select>
+    
+            <label for="guests">Bringst du wen mit?</label>
+            <input type="number" id="guests" name="guests" min="0" max="10">
+    
+            <label for="comments">Was du mir schon immer mal sagen wolltest:</label>
+            <textarea id="comments" name="comments"></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+</body>
+</html>

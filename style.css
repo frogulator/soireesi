@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway.ttf);
+}
+
+@font-face {
+    font-family: FKR;
+    src: url(fkraster.otf);
+}
+
+@font-face {
+    font-family: TanParadiso;
+    src: url(tan-paradiso.otf);
+}
+
+body {
+    margin: 0%;
+    padding: 0;
+    background-color: #FF50A9;
+}
+
+.animation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.part-one {
+    margin: 1rem;
+    padding: 0;
+    height: calc(100vh - 2rem);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+#invitation {
+    width: 100%;
+    position: relative;
+    isolation: isolate;
+    top: -3rem;
+}
+
+#invitation span:first-child {
+    font-size: clamp(6rem, 40vw, 10rem); 
+    font-family: TanParadiso;
+    color: #ff006a;
+    position: relative;
+    z-index: 2;
+    top: 7rem;
+    mix-blend-mode: hue;
+}
+
+#invitation span {
+    margin-inline: 0.3rem;
+    text-align: left;
+    font-size: clamp(2rem, 10vw, 3rem); /* Adjusted with clamp */
+    display: block;
+    opacity: 0;
+    transform: translateY(100%);
+    color: #C1FF72;
+    font-family: Raleway;
+    font-weight: 900;
+    position: relative;
+    z-index: -1;
+    isolation: isolate;
+}
+
+
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 12rem;
+    height: 17rem;
+    padding: 1rem 0;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+    z-index: -2;
+    gap: 0.5rem;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.fa-solid {
+    font-size: 2rem;
+    color: #C1FF72;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.hat {
+    width: 5rem;
+    position: absolute;
+    top: -2.3rem;
+    left: 0.7rem;
+    rotate: -20deg;
+    opacity: 0;
+}
+
+.resi {
+    background-image: url(resi.jpeg);
+    width: 90%;
+    height: 80%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    z-index: -2;
+}
+
+p {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 0.7rem;
+    width: 90%;
+    text-align: center;
+}
+
+
+.text {
+    font-family: TanParadiso;
+    color: #C1FF72;
+    font-size: 2rem;
+    margin: 0%;
+}
+
+.part-two {
+    margin: 1rem;
+    padding: 2rem;
+    height: calc(100vh - 2rem);
+    position: relative;
+    background-color: rgba(0, 0, 255, 0.807);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10rem;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #ff2088;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1rem 1rem 0 1rem;
+    color: #C1FF72;
+    font-size: 3rem;
+}
+
+.part-two p, .part-two a {
+    font-family: FKR;
+    font-size: 2rem;
+}
+
+.part-two a {
+    text-decoration: underline;
+    color: #ff006a;
+}
+
+
+
+h1 {
+    font-family: TanParadiso;
+}
+
+

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway.ttf);
+}
+
+@font-face {
+    font-family: TanParadiso;
+    src: url(tan-paradiso.otf);
+}
+
+body {
+    background-color: #FF50A9;
+}
+.rsvp-form-container {
+    background-color: #ff2088;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #034aff;
+    border-radius: 4px;
+    font-family: Raleway;
+    background-color: #ffffff;
+    color: #034aff;
+}
+
+input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+h2 {
+    font-family: TanParadiso;
+    color: #C1FF72;
+    font-size: 3rem;
+    margin: .6rem 0 .7rem 0;
+}
+
+
+
+label {
+    font-family: Raleway;
+    font-size: 0.8rem;
+    margin-bottom: 1px;
+    color: #C1FF72;
+}
+
+button[type="submit"] {
+    background-color: #C1FF72;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Raleway;
+}
+
+button[type="submit"]:hover {
+    background-color: #b4ff9b;
+} 
+
