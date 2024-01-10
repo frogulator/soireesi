@@ -17,7 +17,7 @@ function startContainerAnimation() {
         { opacity: 0, y: 50 }, 
         { duration: 1, opacity: 1, y: 0, ease: "back.out(1.7)" } 
       )
-      .fromTo(".hat", 
+      .fromTo(".stars", 
         { opacity: 0, y: 70 }, 
         { duration: 1, opacity: 1, y: 0, ease: "back.out(1.7)" }, 
         "-=0.7" 
