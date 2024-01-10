@@ -83,7 +83,7 @@ body {
     
 }
 
-.fa-solid {
+.fa-arrow-down {
     font-size: 2rem;
     color: #C1FF72;
     position: absolute;
@@ -139,42 +139,93 @@ body {
 .part-two {
     margin: 1rem;
     padding: 2rem;
+    padding-top: 3.5rem;
     height: calc(100vh - 2rem);
     position: relative;
     background-color: rgba(0, 0, 255, 0.807);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 10rem;
+    border-radius: 100%;
     flex-direction: column;
+    
 }
 
-.button {
-    background-color: #ff2088;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 1rem 1rem 0 1rem;
-    color: #C1FF72;
-    font-size: 3rem;
-}
 
-.part-two p, .part-two a {
-    font-family: FKR;
+.title {
+    font-size: 2rem;
+    text-align: center;
+    color: #ff006a;
+    font-variant: small-caps;
+    line-height: 1.3;
+    filter: drop-shadow(1px 1px #8b0101);
+    padding-bottom: .7rem;
+    font-family: TanParadiso;
     font-size: 2rem;
 }
 
-.part-two a {
-    text-decoration: underline;
-    color: #ff006a;
-}
-
-
-
-h1 {
+.w {
     font-family: TanParadiso;
+    color: #ff006a; 
 }
 
+.p, .a {
+    font-family: Raleway;
+    font-size: 1rem;
+    color: #ff006a; 
+}
 
+.a {
+    text-decoration: underline;
+}
+
+.flx, .flx2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+}
+
+.button, .button2 {
+    background-color: #ff2088;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px, rgba(0, 0, 0, 0.3) 0px 3px 5px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    text-decoration: none;
+    padding: .6rem 1rem .2rem;
+    color: #C1FF72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: TanParadiso;
+    gap: .5rem;
+    
+}
+
+.button {
+    font-size: 2rem;
+    margin-top: 1.4rem;
+}
+
+.button2 {
+    margin-top: .4rem;
+    font-size: .8rem;
+    padding-bottom: .4rem;
+}
+
+.button .fa-arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; 
+    margin-bottom: .5rem; 
+}
+
+.button2 .fa-arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem; 
+    margin-bottom: .3rem; 
+}
