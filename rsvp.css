@@ -1,16 +1,17 @@
 @font-face {
     font-family: Raleway;
-    src: url(Raleway.ttf);
+    src: url(font/Raleway.ttf);
 }
 
 @font-face {
     font-family: TanParadiso;
-    src: url(tan-paradiso.otf);
+    src: url(font/tan-paradiso.otf);
 }
 
 body {
     background-color: #FF50A9;
 }
+
 .rsvp-form-container {
     background-color: #ff2088;
     padding: 1rem;

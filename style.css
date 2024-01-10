@@ -5,17 +5,17 @@
 
 @font-face {
     font-family: Raleway;
-    src: url(Raleway.ttf);
+    src: url(font/Raleway.ttf);
 }
 
 @font-face {
     font-family: FKR;
-    src: url(fkraster.otf);
+    src: url(font/fkraster.otf);
 }
 
 @font-face {
     font-family: TanParadiso;
-    src: url(tan-paradiso.otf);
+    src: url(font/tan-paradiso.otf);
 }
 
 body {
@@ -46,12 +46,14 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+  
 }
 
 
 #invitation {
     width: 100%;
     isolation: isolate;
+    margin-bottom: 3rem;
 }
 
 #invitation span:first-child {
@@ -62,6 +64,7 @@ body {
     z-index: 2;
     top: 7rem;
     mix-blend-mode: hue;
+    line-height: 1.2;
 }
 
 #invitation span {
@@ -77,6 +80,7 @@ body {
     position: relative;
     z-index: -1;
     isolation: isolate;
+    
 }
 
 .fa-solid {
@@ -94,7 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     color: #ffffff; 
     z-index: -23;
     gap: 0.5rem;
@@ -102,6 +106,7 @@ body {
     right: 0;
     position: relative;
     opacity: 0;
+    flex-grow: 1;
 }
 
 .stars {
@@ -118,8 +123,6 @@ body {
     height: 35vh;
     z-index: -3;
 }
-
-
 
 
 .text {
