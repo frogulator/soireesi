@@ -38,9 +38,8 @@ body {
 }
 
 .part-one {
-    margin: 1vh;
+    margin: 2vh 2vh 2vh 4vh;
     padding: 0;
-    /* height: 84vh; */
     position: relative;
     display: flex;
     flex-direction: column;

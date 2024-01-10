@@ -25,8 +25,8 @@ function startContainerAnimation() {
 }
 
 function adjustHeight() {
-  var vh = window.innerHeight * 0.01; // Calculate 1% of the viewport height
-  var desiredHeight = 98 * vh; // 98% of the viewport height
+  var vh = window.innerHeight * 0.01;
+  var desiredHeight = 94 * vh; 
   document.querySelector('.part-one').style.height = `${desiredHeight}px`; // Set the height
 }
 
