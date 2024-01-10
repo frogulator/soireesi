@@ -53,7 +53,7 @@ body {
 #invitation {
     width: 100%;
     isolation: isolate;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #invitation span:first-child {
@@ -107,6 +107,7 @@ body {
     position: relative;
     opacity: 0;
     flex-grow: 1;
+    width: 55vw;
 }
 
 .stars {
@@ -119,8 +120,11 @@ body {
 }
 
 .resi {
-    width: auto;
-    height: 35vh;
+    background-image: url(img/resi.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
     z-index: -3;
 }
 
