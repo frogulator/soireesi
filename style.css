@@ -40,7 +40,7 @@ body {
 .part-one {
     margin: 1rem;
     padding: 0;
-    height: calc(100vh - 2rem);
+    height: 85vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@ body {
     position: relative;
     opacity: 0;
     flex-grow: 1;
-    width: 55vw;
+    width: 50vw;
 }
 
 .stars {
