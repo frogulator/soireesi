@@ -1,4 +1,4 @@
-gsap.to("#invitation span", {
+gsap.to("#invitation img", {
   duration: 2,
   opacity: 1,
   y: 0,

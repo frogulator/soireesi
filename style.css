@@ -55,18 +55,19 @@ body {
     margin-bottom: 1rem;
 }
 
-#invitation span:first-child {
+.thirtyfour {
     font-size: clamp(6rem, 40vw, 10rem); 
     font-family: TanParadiso;
     color: #ff006a;
     position: relative;
     z-index: 2;
-    top: 7rem;
+    top: 4rem;
     mix-blend-mode: hue;
     line-height: 1.2;
+    width: 60vw;
 }
 
-#invitation span {
+.j, .a, .f {
     margin-inline: 0.3rem;
     text-align: left;
     font-size: clamp(2rem, 10vw, 3rem); 
@@ -79,7 +80,7 @@ body {
     position: relative;
     z-index: -1;
     isolation: isolate;
-    
+    width: 40vw; 
 }
 
 .fa-arrow-down {
