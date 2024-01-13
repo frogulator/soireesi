@@ -58,29 +58,35 @@ body {
 .thirtyfour {
     font-size: clamp(6rem, 40vw, 10rem); 
     font-family: TanParadiso;
-    color: #ff006a;
     position: relative;
     z-index: 2;
-    top: 4rem;
+    top: 7rem;
     mix-blend-mode: hue;
     line-height: 1.2;
     width: 60vw;
 }
 
 .j, .a, .f {
-    margin-inline: 0.3rem;
-    text-align: left;
-    font-size: clamp(2rem, 10vw, 3rem); 
     display: block;
     opacity: 0;
     transform: translateY(100%);
     color: #C1FF72;
-    font-family: Raleway;
-    font-weight: 900;
     position: relative;
     z-index: -1;
     isolation: isolate;
-    width: 40vw; 
+}
+
+.j {
+    width: 40vw;
+    margin-bottom: .2rem;
+}
+
+.a {
+    width: 60vw;
+}
+
+.f {
+    width: 60vw;
 }
 
 .fa-arrow-down {
