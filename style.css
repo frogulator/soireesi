@@ -38,14 +38,14 @@ body {
 }
 
 .part-one {
+    height: 96vh;
     margin: 2vh 2vh 2vh 4vh;
     padding: 0;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-between;
-  
+    justify-content: flex-start;
 }
 
 
@@ -69,7 +69,7 @@ body {
 #invitation span {
     margin-inline: 0.3rem;
     text-align: left;
-    font-size: clamp(2rem, 10vw, 3rem); /* Adjusted with clamp */
+    font-size: clamp(2rem, 10vw, 3rem); 
     display: block;
     opacity: 0;
     transform: translateY(100%);
@@ -106,7 +106,8 @@ body {
     position: relative;
     opacity: 0;
     flex-grow: 1;
-    width: 50vw;
+    width: auto;
+    aspect-ratio: 1 / 1.4;
 }
 
 .stars {
