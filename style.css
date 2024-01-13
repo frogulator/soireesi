@@ -18,6 +18,11 @@
     src: url(font/tan-paradiso.otf);
 }
 
+@font-face {
+    font-family: TanBuster;
+    src: url(font/tanbuster.otf);
+}
+
 body {
     margin: 0%;
     padding: 0;
@@ -52,42 +57,34 @@ body {
 #invitation {
     width: 100%;
     isolation: isolate;
-    top: -2rem;
-    position: relative;
+    margin-bottom: 1rem;
 }
 
-.thirtyfour {
+#invitation span:first-child {
     font-size: clamp(6rem, 40vw, 10rem); 
-    font-family: TanParadiso;
+    font-family: TanBuster;
+    color: #ff006a;
     position: relative;
     z-index: 2;
     top: 7rem;
     mix-blend-mode: hue;
     line-height: 1.2;
-    width: 60vw;
 }
 
-.j, .a, .f {
+#invitation span {
+    margin-inline: 0.3rem;
+    text-align: left;
+    font-size: clamp(2rem, 10vw, 3rem); 
     display: block;
     opacity: 0;
     transform: translateY(100%);
     color: #C1FF72;
+    font-family: Raleway;
+    font-weight: 900;
     position: relative;
     z-index: -1;
     isolation: isolate;
-}
-
-.j {
-    width: 40vw;
-    margin-bottom: .2rem;
-}
-
-.a {
-    width: 60vw;
-}
-
-.f {
-    width: 60vw;
+    
 }
 
 .fa-arrow-down {
