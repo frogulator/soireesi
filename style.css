@@ -143,17 +143,21 @@ body {
 
 .part-two {
     margin: 1rem;
-    padding: 2rem;
-    padding-top: 3.5rem;
     height: calc(100vh - 2rem);
     position: relative;
-    background-color: rgba(0, 0, 255, 0.807);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     border-radius: 100%;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+.bg {
+    background-color: rgba(0, 0, 255, 0.807);
+    padding: 3rem;
+    border-radius: 100%;
+ 
 }
 
 
@@ -201,7 +205,22 @@ body {
     width: 90%;
 }
 
-.button, .button2 {
+.arrow-container {
+    width: 10rem;
+    flex-grow: 1;
+    position: relative;
+    background-image: url(img/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: .4rem;
+}
+
+
+
+
+
+.button {
     background-color: #ff2088;
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px, rgba(0, 0, 0, 0.3) 0px 3px 5px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -214,19 +233,22 @@ body {
     justify-content: center;
     font-family: TanParadiso;
     gap: .5rem;
-    
-}
-
-.button {
     font-size: 2rem;
-    margin-top: 1.4rem;
+    animation: pulse 1s infinite ease-in-out;
 }
 
-.button2 {
-    margin-top: .4rem;
-    font-size: .8rem;
-    padding-bottom: .4rem;
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.03); 
+        box-shadow: rgba(0, 0, 0, 0.307) 0px 2px 4px, rgba(0, 0, 0, 0.157) 0px 4px 6px -4px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
 }
+
+
 
 .button .fa-arrow-right {
     display: flex;
