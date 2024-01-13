@@ -52,7 +52,8 @@ body {
 #invitation {
     width: 100%;
     isolation: isolate;
-    margin-bottom: 1rem;
+    top: -2rem;
+    position: relative;
 }
 
 .thirtyfour {
