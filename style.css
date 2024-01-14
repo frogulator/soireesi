@@ -117,8 +117,7 @@ tl {
     aspect-ratio: 1 / 1.4;
     height: 20vh;
     position: absolute;
-    background-color: #ff006a52;
-    backdrop-filter: blur(2px);
+    background-color: #ff006a;
     top: 3rem;
     right: 5rem;
 }
