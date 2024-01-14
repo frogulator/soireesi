@@ -43,7 +43,6 @@ body {
 }
 
 .part-one {
-    height: 96vh;
     margin: 2vh 2vh 2vh 4vh;
     padding: 0;
     position: relative;
@@ -57,17 +56,17 @@ body {
 #invitation {
     width: 100%;
     isolation: isolate;
-    margin-bottom: 1rem;
 }
 
 #invitation span:first-child {
     font-size: clamp(6rem, 40vw, 10rem); 
     font-family: TanBuster;
     color: #ff006a;
+    filter: drop-shadow(1px 1px #8b0101);
     position: relative;
-    z-index: 2;
+    z-index: -2;
     top: 7rem;
-    mix-blend-mode: hue;
+    /* mix-blend-mode: hue; */
     line-height: 1.2;
 }
 
@@ -78,7 +77,7 @@ body {
     display: block;
     opacity: 0;
     transform: translateY(100%);
-    color: #C1FF72;
+    color: #c2ff72c3;
     font-family: Raleway;
     font-weight: 900;
     position: relative;
@@ -87,32 +86,41 @@ body {
     
 }
 
-.fa-arrow-down {
-    font-size: 2rem;
-    color: #C1FF72;
+.outer-container {
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 4vw;
+}
+
+tl {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    width: 100%;
+    background-color: #3700ff;
 }
 
 .container {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: #ffffff; 
-    z-index: -23;
+    z-index: 5;
     gap: 0.5rem;
-    bottom: 0;
-    right: 0;
-    position: relative;
     opacity: 0;
-    flex-grow: 1;
     width: auto;
     aspect-ratio: 1 / 1.4;
+    height: 30vh;
+    position: absolute;
+    background-color: #ff006a52;
+    backdrop-filter: blur(2px);
+    top: 3rem;
+    right: 5rem;
 }
 
 .stars {
@@ -150,19 +158,18 @@ body {
     justify-content: flex-start;
     border-radius: 100%;
     flex-direction: column; 
-    gap: 1rem;
+    gap: 2vh;
 }
 
 .bg {
-    background-color: rgba(0, 0, 255, 0.807);
-    padding: 3rem;
+    background-color: #3700ff;
+    padding: 2.5rem 3rem 1.5rem 3rem;
     border-radius: 100%;
  
 }
 
-
 .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     color: #ff006a;
     font-variant: small-caps;
@@ -175,19 +182,19 @@ body {
 
 .w {
     font-family: TanParadiso;
-    color: #ff006a; 
+    color: #3700ff; 
 }
 
 .p, .a {
     font-family: Raleway;
     font-size: 1rem;
-    color: #ff006a; 
+    color: #3700ff; 
 }
 
 .k {
     font-family: Raleway;
-    font-size: .8rem;
-    color: #ff006a; 
+    font-size: 1rem;
+    color: #3700ff; 
     width: 100%; 
     text-align: center;
     margin-top: 1.2rem;
@@ -217,16 +224,13 @@ body {
 }
 
 
-
-
-
 .button {
     background-color: #ff2088;
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px, rgba(0, 0, 0, 0.3) 0px 3px 5px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     cursor: pointer;
     text-decoration: none;
-    padding: .7rem 1rem .4rem 1.9rem;
+    padding: 1.4rem 1.3rem .9rem 2.4rem;
     color: #C1FF72;
     display: flex;
     align-items: center;
@@ -258,10 +262,4 @@ body {
     margin-bottom: .5rem; 
 }
 
-.button2 .fa-arrow-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem; 
-    margin-bottom: .3rem; 
-}
+
