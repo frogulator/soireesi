@@ -86,23 +86,21 @@ body {
     
 }
 
-.outer-container {
-    position: relative;
+.container {
     flex-grow: 1;
     width: 100%;
     display: flex;
-    align-items: end;
-    justify-content: space-between;
-    gap: 4vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
 }
 
-tl {
-    position: absolute;
+.tl {
     width: 100%;
-    background-color: #3700ff;
 }
 
-.container {
+.polaroid, .polaroid2, .polaroid3, .polaroid4  {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     padding: .5rem;
     border-radius: .5rem;
@@ -112,14 +110,20 @@ tl {
     justify-content: space-around;
     z-index: 5;
     gap: 0.5rem;
-    opacity: 0;
     width: auto;
-    aspect-ratio: 1 / 1.4;
+    aspect-ratio: 1 / 1.3;
     height: 20vh;
-    position: absolute;
-    background-color: #ff006a;
+    background-color: #ff006a6f;
     top: 3rem;
     right: 5rem;
+}
+
+.polaroid {
+    align-self: flex-start;
+}
+
+.polaroid2 {
+    align-self: flex-end;
 }
 
 .stars {
