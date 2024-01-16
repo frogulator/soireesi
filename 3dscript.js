@@ -9,9 +9,9 @@ const renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('threejs-container').appendChild(renderer.domElement);
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 2); 
+const ambientLight = new THREE.AmbientLight(0xffffff, 3); 
 scene.add(ambientLight);
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
 scene.add(directionalLight);
 const directionalLight2 = new THREE.DirectionalLight(0xffffff, 4);
 directionalLight.position.set(1, 1, 1);
@@ -22,14 +22,19 @@ loader.load('img/sign.gltf', function (gltf) {
     const scale = 0.8;
     gltf.scene.scale.set(scale, scale, scale); 
 
+    const pinkMaterial = new THREE.MeshPhysicalMaterial({
+        color: 0xff006a, 
+        metalness: 0.1,
+        roughness: 0.1,
+        transmission: 0.9, 
+        opacity: 0.9,
+        transparent: true,
+        reflectivity: 0.9
+    });
+
     gltf.scene.traverse((node) => {
         if (node.isMesh) {
-            node.material = new THREE.MeshStandardMaterial({
-                color: 0xff006a, 
-                metalness: 0.4, 
-                roughness: 0.1,
-                envMapIntensity: 1, 
-            });
+            node.material = pinkMaterial;
         }
     });
     scene.add(gltf.scene);
@@ -67,7 +72,7 @@ camera.position.z = 5;
 const animate = function () {
     requestAnimationFrame(animate);
 
-    scene.rotation.y += 0.002;
+    scene.rotation.y += 0.01;
 
 
     renderer.render(scene, camera);
