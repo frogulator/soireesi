@@ -18,23 +18,48 @@ directionalLight.position.set(1, 1, 1);
 scene.add(directionalLight2);
 
 const loader = new GLTFLoader();
-loader.load('img/rsvp.gltf', function (gltf) {
-    const scale = .7;
+loader.load('img/sign.gltf', function (gltf) {
+    const scale = 1;
     gltf.scene.scale.set(scale, scale, scale); 
 
     gltf.scene.traverse((node) => {
         if (node.isMesh) {
             node.material = new THREE.MeshStandardMaterial({
-                color: 0xC0C0C0, // Silver color
-                metalness: 0.9, // Adjust for more or less metallic look
-                roughness: 0.3, // Lower roughness for a smoother surface
-                envMapIntensity: 1.0, // Adjust for environment map intensity
+                color: 0xff006a, 
+                metalness: 0.4, 
+                roughness: 0.1,
+                envMapIntensity: 1, 
             });
         }
     });
     scene.add(gltf.scene);
 }, undefined, function (error) {
     console.error(error);
+});
+
+loader.load('img/rsvp.gltf', function (gltf) {
+    const scale = 1;
+    gltf.scene.scale.set(scale, scale, scale);
+
+    const greenGlassMaterial = new THREE.MeshPhysicalMaterial({
+        color: 0x91ff00, 
+        metalness: 0.2,
+        roughness: 0.1,
+        transmission: 0.9, 
+        opacity: 0.95,
+        transparent: true,
+        reflectivity: 0.9
+    });
+
+    gltf.scene.traverse((node) => {
+        if (node.isMesh) {
+            node.material = greenGlassMaterial;
+        }
+    });
+
+    scene.add(gltf.scene);
+}, undefined, function (error) {
+    console.error('An error happened with the second model:', error);
 });
 
 camera.position.z = 5;
