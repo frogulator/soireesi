@@ -25,17 +25,3 @@ function startContainerAnimation() {
   
   gsap.to(tl, {duration: 2, delay: 5});
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soiresi</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
     <div class="part-one">
@@ -54,13 +56,7 @@
 
     <div class="part-two">
         <div class="bg">
-            <h1 class="title">Soireesi <br>& Friends</h1>
-        
-
-            
-           
-    
-            
+            <h1 class="title">Soireesi <br>& Friends</h1>  
         </div>
 
         <div class="flx">
@@ -72,14 +68,27 @@
             <a class="a"  target="_blank" href="https://www.google.com/maps/place/Kinzigstraße+9,+10247+Berlin/@52.5137029,13.463577,17z/data=!3m1!4b1!4m6!3m5!1s0x47a84ef54e6cf8f1:0x89ef8250bdc6cf36!8m2!3d52.5136997!4d13.4661519!16s%2Fg%2F11bw40m1g9?entry=ttu">k9</a>
         </div>
 
-        <!-- <p class="k">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et!</p> -->
+        <p class="k">Feiert mit mir, dass ich euch feire. Und zusammen machen wir ne Soliparty draus, woop!
+            Wie sich das für ein Soiree gehört gibt es ab 22 ein Programm erlesener Künstler*innen und danach zertanzen wir unsere Schuh! Dresscode: Dein Lieblingskleid/-anzug</p>
         <div class="arrow-container"></div>
        
        
-         <a href="rsvp.html" class="button">
+         <!-- <a href="rsvp.html" class="button">
             RSVP
             <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        </a> -->
+
+        <div id="threejs-container"></div>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://threejs.org/build/three.module.js",
+                    "three/examples/jsm/controls/OrbitControls": "https://threejs.org/examples/jsm/controls/OrbitControls.js",
+                    "three/examples/jsm/loaders/GLTFLoader": "https://threejs.org/examples/jsm/loaders/GLTFLoader.js"
+                }
+            }
+                         </script>
+                         <script type="module" src="3dscript.js"></script>
         <!-- <a href="rsvp.html" class="button2">
             ZU DEN RESI-MINIGAMES
             <i class="fa-solid fa-arrow-right"></i>
