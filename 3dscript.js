@@ -19,7 +19,7 @@ scene.add(directionalLight2);
 
 const loader = new GLTFLoader();
 loader.load('img/sign.gltf', function (gltf) {
-    const scale = 1;
+    const scale = 0.7;
     gltf.scene.scale.set(scale, scale, scale); 
 
     gltf.scene.traverse((node) => {
@@ -38,7 +38,7 @@ loader.load('img/sign.gltf', function (gltf) {
 });
 
 loader.load('img/rsvp.gltf', function (gltf) {
-    const scale = 1;
+    const scale = 0.7;
     gltf.scene.scale.set(scale, scale, scale);
 
     const greenGlassMaterial = new THREE.MeshPhysicalMaterial({
