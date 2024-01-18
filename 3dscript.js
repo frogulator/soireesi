@@ -72,7 +72,7 @@ camera.position.z = 5;
 const animate = function () {
     requestAnimationFrame(animate);
 
-    scene.rotation.y += 0.01;
+    scene.rotation.y += 0.0;
 
 
     renderer.render(scene, camera);
