@@ -52,6 +52,10 @@ h2 {
 
 p {
     margin: 0%;
+    font-family: Raleway;
+    color: #ff2088;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 label {
@@ -67,10 +71,7 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: Raleway;
-    color: #ff2088;
-    font-weight: 300;
-    font-size: 1rem;
+    
 }
 
 button[type="submit"]:hover {
