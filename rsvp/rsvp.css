@@ -1,11 +1,11 @@
 @font-face {
     font-family: Raleway;
-    src: url(font/Raleway.ttf);
+    src: url(../font/Raleway.ttf);
 }
 
 @font-face {
     font-family: TanParadiso;
-    src: url(font/tan-paradiso.otf);
+    src: url(../font/tan-paradiso.otf);
 }
 
 body {
@@ -54,7 +54,7 @@ h2 {
 
 label {
     font-family: Raleway;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 1px;
     color: #C1FF72;
 }
@@ -66,6 +66,7 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-family: Raleway;
+    color: #034aff
 }
 
 button[type="submit"]:hover {
