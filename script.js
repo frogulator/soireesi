@@ -14,7 +14,7 @@ function startContainerAnimation() {
   tl
     .fromTo(".container", 
       { opacity: 0, y: 50 }, 
-      { duration: 1, opacity: 1, y: 0, ease: "back.out(1.7)" }
+      { duration: 2, opacity: 1, y: 0, ease: "back.out(1.7)" }
     )
   gsap.to(tl, {duration: 2, delay: 5});
 }
