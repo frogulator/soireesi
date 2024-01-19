@@ -70,6 +70,7 @@ button[type="submit"] {
     font-family: Raleway;
     color: #ff2088;
     font-weight: 300;
+    font-size: 1rem;
 }
 
 button[type="submit"]:hover {
