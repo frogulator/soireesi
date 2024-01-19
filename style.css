@@ -56,7 +56,7 @@ body {
 #invitation {
     width: 100%;
     isolation: isolate;
-    margin-bottom: 2.6rem;
+    
 }
 
 #invitation span:first-child {
