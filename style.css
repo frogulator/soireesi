@@ -179,6 +179,7 @@ body {
     justify-content: flex-start;
     flex-direction: column; 
     gap: 2vh;
+    background-color: #C1FF72;
 }
 
 .bg {
