@@ -172,14 +172,13 @@ body {
 
 .part-two {
     margin: 1rem;
-    height: calc(100vh - 2rem);
+    margin-bottom: 3rem;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column; 
     gap: 2vh;
-    background-color: #C1FF72;
 }
 
 .bg {
