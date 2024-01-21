@@ -12,3 +12,5 @@ gsap.fromTo(".container",
       { opacity: 0, y: 100 }, 
       { duration: 3, opacity: 1, y: 0, ease: "back.out(2)"}
     )
+
+  
