@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="rsvp.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>emailjs.init("FD23SeCS4zAVskE8d");</script>
 </head>
 <body>
     <div class="rsvp-form-container">
@@ -20,9 +22,9 @@
     
             <label for="attendance">Kommst du rum?</label>
             <select id="attendance" name="attendance">
-                <option value="yes">Ja!</option>
-                <option value="no">Nein :( </option>
-                <option value="maybe">Vielleicht...</option>
+                <option value="Ja">Ja!</option>
+                <option value="Nein">Nein :( </option>
+                <option value="Vielleicht">Vielleicht...</option>
             </select>
     
             <label for="guests">Bringst du wen mit?</label>
@@ -32,6 +34,9 @@
             <textarea id="comments" name="comments"></textarea>
     
             <button type="submit"><p>Submit</p></button>
+
+
         </form>
+        <script src="rsvp.js"></script>  
 </body>
 </html>
