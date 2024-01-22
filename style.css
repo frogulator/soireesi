@@ -192,7 +192,7 @@ body {
 }
 
 .title {
-    font-size: clamp(2.5rem, 15vw, 10rem); 
+    font-size: clamp(2.5rem, 20vw, 7,5rem); 
     text-align: center;
     color: #FF50A9;
     font-variant: small-caps;
@@ -200,7 +200,7 @@ body {
     filter: drop-shadow(1px 1px #8b0101);
     padding-bottom: .7rem;
     font-family: TanParadiso;
-    font-size: 2rem;
+    
 }
 
 .w {
@@ -412,6 +412,68 @@ body {
     .fa-chevron-right {
         right: 0;
     }
+
+    .part-two {
+        margin: 1rem;
+        height: calc(100vh - 2rem);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column; 
+        gap: 2vh;
+    }
+    
+    .bg {
+        background-color: #3700ff;
+        padding: 4rem 6rem;
+        border-radius: 100%;
+     
+    }
+    
+    .title {
+        font-size: clamp(2.5rem, 20vw, 7rem); 
+        text-align: center;
+        color: #FF50A9;
+        font-variant: small-caps;
+        line-height: 1.3;
+        filter: drop-shadow(3px 3px #8b0101);
+        padding-top: 1rem;
+        font-family: TanParadiso;
+    }
+    
+    .w {
+        font-family: TanParadiso;
+        color: #3700ff; 
+    }
+    
+    .p, .a {
+        font-family: Raleway;
+        font-size: 1rem;
+        color: #3700ff; 
+    }
+    
+    .k {
+        font-family: Raleway;
+        font-size: 1rem;
+        color: #3700ff; 
+        width: 100%; 
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    
+    .a {
+        text-decoration: underline;
+    }
+    
+    .flx, .flx2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 60%;
+    }
+    
 
     
     
