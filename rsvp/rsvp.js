@@ -7,7 +7,8 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
         email: document.getElementById('email').value,
         attendance: document.getElementById('attendance').value,
         guests: document.getElementById('guests').value,
-        comments: document.getElementById('comments').value
+        comments: document.getElementById('comments').value,
+        kehr: document.getElementById('kehr').value
     })
     .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
